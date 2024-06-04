@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF (in development)</title>
+    <style>
+        body {
+            font-family: 'Overpass Mono', monospace;
+            background-color:#181818;
+            color: #f9f9f9;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #323232;
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            font-weight: lighter;
+            position: relative; /* Position relative for absolute positioning of the line */
+            margin-bottom: 20px; /* Add space between text and line */
+            display: inline-block;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 2px;
+            background-color: #e87638;
+        }
+        
+        #flagForm {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        #flagInput {
+            position: relative; /* Set the input field to relative positioning */
+            flex: 1;
+            width: calc(80% - 45px);
+            padding: 20px;
+            margin-right: 10px;
+            border: 0.5px solid #444;
+            border-radius: 4px;
+            background-color: #333;
+            color: #f9f9f9;
+            margin-right: -4px;
+        }
+
+        #submitBtn {
+            padding: 10px 15px;
+            font-size: 16px;
+            color: #fcfcfc;
+            background-color: #333; /* Match the input field color */
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            position: absolute; /* Set the submit button to absolute positioning */
+            right: 0;
+            height: 100%; /* Should be INSIDE input box */
+            overflow: hidden; /* Hide the overflow */
+        }
+
+
+        #submitBtn:hover, #flagInput:hover {
+            outline: 2px solid #e87638; /* Change the button's outline color on hover */
+        }
+   
+        .alert {
+            color: #cf6679;
+            font-size: 14px;
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="stage-title"></h1>
+        <div id="instruction"></div>
+        <br>
+        <div id="flagForm">
+            <input type="text" id="flagInput" placeholder="Flag">
+            <button id="submitBtn">▷</button>
+        </div>
+        <div class="alert" id="alert"></div>
+        <!-- The flag is: Caesar -->
+    </div>
+    <script>
+        let FLAGS = ["blink", "binary", "caesar", "I came, I saw, I conquered"];
+        let INSTRUCTIONS = [
+            "Each team has been provided with their opponent's flag. You must communicate the first clue to the opposing team via morse code using a blinking LED. (Keeping your opponent’s flag from them is not an option.)",
+            "'In ones and zeroes, I am found,\nA language without a sound.\nWith just two digits, I convey,\nAll about computing, every day.'",
+            "Beneath the surface, the source resides. Hidden in code, secrets abide.",
+            "O IGSK, O YGC, O IUTWAKXKJ"
+        ];
+        let TITLES = [
+            "1. A Cooperative Clue",
+            "2. What Am I?",
+            "3. Out of Sight",
+            "4. Shifty Statements"
+        ];
+        let index = 0; // Index to keep track of the current flag
+
+        // Function to submit flag
+        function submitFlag() {
+            const flagInput = document.getElementById("flagInput").value.toLowerCase(); // Convert input to lowercase
+            const expectedFlag = FLAGS[index].toLowerCase(); // Convert expected flag to lowercase
+            if (flagInput === expectedFlag) {
+                document.getElementById("alert").innerText = "";
+                index++;
+                displayInstruction();
+            } else {
+                document.getElementById("alert").innerText = "Incorrect flag! Try again.";
+            }
+            document.getElementById("flagInput").value = ""; // Clear input field after submission
+        }
+
+        // Function to display instruction
+        function displayInstruction() {
+            if (index < INSTRUCTIONS.length) {
+                document.getElementById("instruction").innerText = INSTRUCTIONS[index];
+                document.getElementById("stage-title").innerText = TITLES[index];
+            } else {
+                document.getElementById("stage-title").innerText = "Congratulations!";
+                document.getElementById("instruction").innerText = "You've completed the CTF.";
+                document.getElementById("flagForm").style.display = "none"; // Hide the flag input form when finished
+            }
+        }
+
+        // Load flags when the page is loaded
+        window.onload = function() {
+            // Ensure that all necessary DOM elements exist before accessing them
+            const submitBtn = document.getElementById("submitBtn");
+            const flagInput = document.getElementById("flagInput");
+            const alertDiv = document.getElementById("alert");
+            const instructionDiv = document.getElementById("instruction");
+            const stageTitleDiv = document.getElementById("stage-title");
+            const flagForm = document.getElementById("flagForm");
+
+            if (submitBtn && flagInput && alertDiv && instructionDiv && stageTitleDiv && flagForm) {
+                displayInstruction();
+                submitBtn.onclick = submitFlag;
+            } else {
+                console.error('One or more required DOM elements are missing.');
+            }
+        };
+    </script>
+</body>
+</html>
