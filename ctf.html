@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Overpass Mono', monospace;
-            background-color:#181818;
+            background-color: #181818;
             color: #f9f9f9;
             text-align: center;
         }
@@ -21,11 +21,10 @@
         h1 {
             text-align: center;
             font-weight: lighter;
-            position: relative; /* Position relative for absolute positioning of the line */
-            margin-bottom: 20px; /* Add space between text and line */
+            position: relative;
+            margin-bottom: 20px;
             display: inline-block;
         }
-
         h1::after {
             content: '';
             position: absolute;
@@ -35,7 +34,6 @@
             height: 2px;
             background-color: #e87638;
         }
-        
         #flagForm {
             position: relative;
             display: flex;
@@ -43,9 +41,8 @@
             align-items: center;
             text-align: center;
         }
-
         #flagInput {
-            position: relative; /* Set the input field to relative positioning */
+            position: relative;
             flex: 1;
             width: calc(80% - 45px);
             padding: 20px;
@@ -56,37 +53,70 @@
             color: #f9f9f9;
             margin-right: -4px;
         }
-
         #submitBtn {
-            padding: 10px 15px;
+            padding: 10px;
             font-size: 16px;
             color: #fcfcfc;
-            background-color: #333; /* Match the input field color */
+            background-color: #333;
             border: none;
             border-radius: 0 4px 4px 0;
             cursor: pointer;
             transition: background-color 0.3s ease;
-            position: absolute; /* Set the submit button to absolute positioning */
+            position: absolute;
             right: 0;
-            height: 100%; /* Should be INSIDE input box */
-            overflow: hidden; /* Hide the overflow */
+            height: 100%;
+            overflow: hidden;
         }
-
-
         #submitBtn:hover, #flagInput:hover {
-            outline: 2px solid #e87638; /* Change the button's outline color on hover */
+            outline: 2px solid #e87638;
         }
-   
         .alert {
             color: #cf6679;
             font-size: 14px;
             margin-top: 10px;
             text-align: center;
         }
+       .phone-call {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            z-index: 999; /* Ensure the phone is above other elements */
+        }
+
+        .phone-call img {
+            width: 200px; /* Adjust the size of the phone */
+            height: auto;
+        }
+
+        .dialog-box {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #323232;
+            color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            z-index: 1000;
+        }
+        .dialog-box button {
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            background-color: #e87638;
+            color: #fff;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="contentContainer">
         <h1 id="stage-title"></h1>
         <div id="instruction"></div>
         <br>
@@ -95,7 +125,15 @@
             <button id="submitBtn">▷</button>
         </div>
         <div class="alert" id="alert"></div>
-        <!-- The flag is: Caesar -->
+    </div>
+    <div class="phone-call" id="phoneCall">
+        <img src="ringing-phone.gif" alt="Phone ringing">
+    </div>
+    <div class="dialog-box" id="dialogBox">
+        <p>Congratulations! Your performance proves you have the skills we need.</p>
+        <p>This challenge was an assessment to find individuals like you to aid an important mission.</p>
+        <p>If you're interested in learning more, please confirm your cooperation.</p>
+        <button onclick="closeDialog()">I'd like to know more'</button>
     </div>
     <script>
         let FLAGS = ["blink", "binary", "caesar", "I came, I saw, I conquered"];
@@ -111,12 +149,12 @@
             "3. Out of Sight",
             "4. Shifty Statements"
         ];
+
         let index = 0; // Index to keep track of the current flag
 
-        // Function to submit flag
         function submitFlag() {
-            const flagInput = document.getElementById("flagInput").value.toLowerCase(); // Convert input to lowercase
-            const expectedFlag = FLAGS[index].toLowerCase(); // Convert expected flag to lowercase
+            const flagInput = document.getElementById("flagInput").value.toLowerCase();
+            const expectedFlag = FLAGS[index].toLowerCase();
             if (flagInput === expectedFlag) {
                 document.getElementById("alert").innerText = "";
                 index++;
@@ -124,38 +162,44 @@
             } else {
                 document.getElementById("alert").innerText = "Incorrect flag! Try again.";
             }
-            document.getElementById("flagInput").value = ""; // Clear input field after submission
+            document.getElementById("flagInput").value = "";
         }
 
-        // Function to display instruction
         function displayInstruction() {
             if (index < INSTRUCTIONS.length) {
                 document.getElementById("instruction").innerText = INSTRUCTIONS[index];
                 document.getElementById("stage-title").innerText = TITLES[index];
             } else {
-                document.getElementById("stage-title").innerText = "Congratulations!";
-                document.getElementById("instruction").innerText = "You've completed the CTF.";
-                document.getElementById("flagForm").style.display = "none"; // Hide the flag input form when finished
+                document.getElementById("contentContainer").style.display = "none";
+                document.getElementById("phoneCall").style.display = "block";
             }
         }
 
-        // Load flags when the page is loaded
         window.onload = function() {
-            // Ensure that all necessary DOM elements exist before accessing them
             const submitBtn = document.getElementById("submitBtn");
             const flagInput = document.getElementById("flagInput");
             const alertDiv = document.getElementById("alert");
             const instructionDiv = document.getElementById("instruction");
             const stageTitleDiv = document.getElementById("stage-title");
             const flagForm = document.getElementById("flagForm");
+            const phoneCall = document.getElementById("phoneCall");
 
-            if (submitBtn && flagInput && alertDiv && instructionDiv && stageTitleDiv && flagForm) {
+            if (submitBtn && flagInput && alertDiv && instructionDiv && stageTitleDiv && flagForm && phoneCall) {
                 displayInstruction();
                 submitBtn.onclick = submitFlag;
+                phoneCall.onclick = showDialog;
             } else {
                 console.error('One or more required DOM elements are missing.');
             }
         };
+
+        function showDialog() {
+            document.getElementById("dialogBox").style.display = "block";
+        }
+
+        function closeDialog() {
+            document.getElementById("dialogBox").style.display = "none";
+        }
     </script>
 </body>
 </html>
