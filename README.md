@@ -24,7 +24,8 @@ Morse code for blink:
 _with short flashes representing dots, and longer flashes representing dashes._
 
 Each flag is in the format: _ctf{flag_goes_here}_, where _"flag_goes_here"_ is replaced by the word/phrase you find is the flag.
-**Flag:** ctf{blink}
+
+#### Flag: ctf{blink}
 
 ---
 
@@ -35,7 +36,7 @@ Each flag is in the format: _ctf{flag_goes_here}_, where _"flag_goes_here"_ is r
 
 ### Intended Solve
 
-**Flag:**
+#### Flag: 
 
 ---
 
@@ -44,7 +45,7 @@ Each flag is in the format: _ctf{flag_goes_here}_, where _"flag_goes_here"_ is r
 
 ### Intended Solve
 
-**Flag:**
+#### Flag: 
 
 ---
 
@@ -53,7 +54,7 @@ Each flag is in the format: _ctf{flag_goes_here}_, where _"flag_goes_here"_ is r
 
 ### Intended Solve
 
-**Flag:**
+#### Flag: 
 
 ---
 
