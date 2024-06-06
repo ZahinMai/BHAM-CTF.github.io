@@ -5,7 +5,7 @@ let INSTRUCTIONS = [
     "Each team has been provided with their opponent's flag. You must communicate the first clue to the opposing team via morse code using a blinking LED.",
     "'In ones and zeroes, I am found,\nA language without a sound.\nWith just two digits, I convey,\nAll about computing, every day.'",
     "Beneath the surface, the source resides. Hidden in code, secrets abide.",
-    "ab3fJAM{P-jhtl-P-zhd-P-jvuxblylk}7q2x"
+    "ab3fjam{P-jhtl-P-zhd-P-jvuxblylk}7q2x"
 ];
 let TITLES = [
     "1. Getting started",
