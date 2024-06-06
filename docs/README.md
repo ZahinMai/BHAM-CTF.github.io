@@ -88,12 +88,12 @@ Hidden as a comment in the source code is **caesar**.
 
 ## Challenge 6 - Shifty statements
 ### Challenge instructions
-O IGSK, O YGC, O IUTWAKXKJ
+ab3fjam{P-jhtl-P-zhd-P-jvuxblylk}7q2x
 
 ### Intended solve
-This is a Caesar cipher of "I CAME, I SAW, I CONQUERED", which has been shifted by 6 characters. To decrypt, a rotational shift of 20 is used. The flag is the decrypted text.
+This is a Caesar cipher of "tu3yctf{I-came-I-saw-I-conquered}7j2q", which has been shifted by 7 characters. To decrypt, a rotational shift of 19 is used. The flag is within the decrypted text.
 
-#### Flag: ctf{I CAME, I SAW, I CONQUERED}
+#### Flag: ctf{I-came-I-saw-I-conquered}
 
 ---
 
