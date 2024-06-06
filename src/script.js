@@ -1,7 +1,7 @@
-let FLAGS = ["CTF{capture-the-flag}", "CTF{the-second-flag}", "CTF{blink}", "CTF{binary}", "CTF{caesar}", "CTF{I-came-I saw-I-conquered}"];
+let FLAGS = ["ctf{capture-the-flag}", "ctf{the-second-flag}", "ctf{blink}", "ctf{binary}", "ctf{caesar}", "CTF{I-came-I saw-I-conquered}"];
 let INSTRUCTIONS = [
-    "A Capture the Flag (CTF) is a competition where you solve a number of challenges to test yor cybsecurity skills by solving problems to recover flags. ALL flags in our CTF will look something like this: CTF{capture-the-flag}.  You can solve the first challenge right now by submitting this flag",
-    "Some challenges require you to download files in order to be able to solve them. Click on the ‘DOWNLOAD CHALLENGE’ button to download the challenge and submit the flag!",
+    "A capture-the-flag (CTF) is a competition where you solve a number of challenges to test your cybersecurity skills by solving problems to recover flags. All flags in our CTF will look something like this: ctf{capture-the-flag}.  You can solve the first challenge right now by submitting this flag.",
+    "Some challenges require you to download files in order to be able to solve them. Click on the ‘DOWNLOAD CHALLENGE’ button to download the challenge and find the flag to submit!",
     "Each team has been provided with their opponent's flag. You must communicate the first clue to the opposing team via morse code using a blinking LED.",
     "'In ones and zeroes, I am found,\nA language without a sound.\nWith just two digits, I convey,\nAll about computing, every day.'",
     "Beneath the surface, the source resides. Hidden in code, secrets abide.",
