@@ -8,12 +8,12 @@ let INSTRUCTIONS = [
     "ab3fJAM{P-jhtl-P-zhd-P-jvuxblylk}7q2x"
 ];
 let TITLES = [
-    "1. Getting Started",
-    "2. Downloadable Challenges",
-    "3. A Cooperative Clue",
-    "4. What Am I?",
-    "5. Out of Sight",
-    "6. Shifty Statements"
+    "1. Getting started",
+    "2. Downloadable challenges",
+    "3. A cooperative clue",
+    "4. What am I?",
+    "5. Out of sight",
+    "6. Shifty statements"
 ];
 
 let HINTS = [
