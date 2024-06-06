@@ -9,18 +9,20 @@
 - Each team has been provided with their opponent's flag.
 - You must communicate the first clue to the opposing team in morse code using a blinking LED.
 
+  
 ### Skills
 - Morse code
 - LED programming
 - Cryptography
 
+  
 ### Intended Solve
+Morse code for blink:
+-... .-.. .. -. -.-  
+_with short flashes representing dots, and longer flashes representing dashes._
 
-
-**Flag:**
-_Each flag is in the format: ctf{flag_goes_here}, where "flag_goes_here" is replaced by the word/phrase you find is the flag._
-- Team 1 - ctf{binary}
-- Team 2 - ctf{caesar}
+Each flag is in the format: _ctf{flag_goes_here}_, where _"flag_goes_here"_ is replaced by the word/phrase you find is the flag.
+**Flag:** ctf{blink}
 
 ---
 
