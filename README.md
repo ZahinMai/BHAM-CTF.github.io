@@ -10,13 +10,11 @@
 ### Challenge Instructions
 - Each team has been provided with their opponent's flag.
 - You must communicate the first clue to the opposing team in morse code using a blinking LED.
-
   
 ### Skills
 - Morse code
 - LED programming
 - Cryptography
-
   
 ### Intended Solve
 Morse code for blink:
@@ -49,19 +47,27 @@ The answer to the riddle is **binary**.
 
 ## Challenge 3 - Out of sight
 ### Challenge Instructions
+- Beneath the surface, the source resides. Hidden in code, secrets abide.
+
+### Skills
+- Problem solving
+- Knowledge of HTML comments
 
 ### Intended Solve
+Hidden as a comment in the source code is **caesar**.
 
-#### Flag: 
+#### Flag: ctf{caesar}
 
 ---
 
 ## Challenge 4 - Shifty statements
 ### Challenge Instructions
+O IGSK, O YGC, O IUTWAKXKJ
 
 ### Intended Solve
+This is a Caesar cipher of "I CAME, I SAW, I CONQUERED", which has been shifted by 6 characters. To decrypt, a rotational shift of 20 is used. The flag is the decrypted text.
 
-#### Flag: 
+#### Flag: ctf{I CAME, I SAW, I CONQUERED}
 
 ---
 
