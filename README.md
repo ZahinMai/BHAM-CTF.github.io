@@ -31,12 +31,19 @@ Each flag is in the format: _ctf{flag_goes_here}_, where _"flag_goes_here"_ is r
 
 ## Challenge 2 - What am I?
 ### Challenge Instructions
+- 'In ones and zeroes,  I am found,  
+  A language without a sound.  
+  With just two digits, I convey.   
+  All about computing, every day.'
 
 ### Skills
+- Problem solving
+- Knowledge of binary
 
 ### Intended Solve
+The answer to the riddle is **binary**.
 
-#### Flag: 
+#### Flag: ctf{binary}
 
 ---
 
