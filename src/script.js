@@ -1,4 +1,4 @@
-let FLAGS = ["ctf{capture-the-flag}", "ctf{the-second-flag}", "ctf{blink}", "ctf{binary}", "ctf{caesar}", "CTF{I-came-I saw-I-conquered}"];
+let FLAGS = ["ctf{capture-the-flag}", "ctf{the-second-flag}", "ctf{blink}", "ctf{binary}", "ctf{caesar}", "ctf{I-came-I-saw-I-conquered}"];
 let INSTRUCTIONS = [
     "A capture-the-flag (CTF) is a competition where you solve a number of challenges to test your cybersecurity skills by solving problems to recover flags. All flags in our CTF will look something like this: ctf{capture-the-flag}.  You can solve the first challenge right now by submitting this flag.",
     "Some challenges require you to download files in order to be able to solve them. Click on the ‘DOWNLOAD CHALLENGE’ button to download the challenge and find the flag to submit!",
