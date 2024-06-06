@@ -1,1 +1,1 @@
-CTF{the-second-flag}
+ctf{the-second-flag}
