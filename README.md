@@ -29,7 +29,6 @@
 #### Flag: ctf{the-second-flag}  
 
 --- 
----
 
 # Intermediate
 
