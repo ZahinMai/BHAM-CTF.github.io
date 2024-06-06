@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF (in development)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onkeypress="KeyPressCheck(event)">
+    <div class="container" id="contentContainer">
+        <h1 id="stage-title"></h1>
+        <div id="instruction"></div>
+        <a id="downloadLink" href="data:text/plain;charset=utf-8,ctf{the-second-flag}" download="flag-2.txt" style="display: none;">Download Challenge</a>
+        <br>
+        <div id="flagForm">
+            <input type="text" id="flagInput" placeholder="Flag">
+            <button id="submitBtn">▷</button>
+        </div>
+        <button onclick="showHint">Unlock Hint</button>
+        <div id="hint"></div>
+        <div class="alert" id="alert"></div>
+    </div>
+    <div class="phone-call" id="phoneCall">
+        <img src="ringing-phone.gif" alt="Phone ringing">
+    </div>
+    <div class="dialog-box" id="dialogBox">
+        <p>Congratulations! Your performance proves you have the skills we need.</p>
+        <p>This challenge was an assessment to find individuals like you to aid an important mission.</p>
+        <p>If you're interested in learning more, please confirm your cooperation.</p>
+        <button onclick="closeDialog()">I'd like to know more.</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
