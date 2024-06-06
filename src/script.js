@@ -19,7 +19,7 @@ let TITLES = [
 let HINTS = [
     "No hint for this part :(",
     "No hint for this part :(",
-    "Keeping your opponent’s flag from them is not an option as it will be an isntant fail.",
+    "Keeping your opponent’s flag from them is not an option as it will be an instant fail.",
     "Please, you don't need a clue for this...",
     "How do you inspect the page source?",
     "Caesar said:"
