@@ -1,4 +1,4 @@
-# "Security challenge" CTF structure
+# "Security challenge" CTF
 
 **Target age range: 14-18 (Years 10 - 13)**
 
