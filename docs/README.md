@@ -21,7 +21,7 @@
 ## Challenge 2 - Downloadable challenges
 ### Challenge instructions
 - Some challenges require you to download files in order to be able to solve them.
-- Click on the ‘DOWNLOAD CHALLENGE’ button to download the [challenge files](/src/flag-2.txt) and find the flag!
+- Click on the ‘DOWNLOAD CHALLENGE’ button to download the [challenge files](/src/flag-2.txt) and find the flag to submit!
   
 ### Intended solve
 [The linked file](/src/flag-2.txt) contains the flag: ctf{the-second-flag}
