@@ -1,5 +1,7 @@
 # "Security challenge" CTF structure
 
+**Target age range: 11-14 (Years 7 - 9)**
+
 ---
 
 ## Challenge 1 - A cooperative clue
