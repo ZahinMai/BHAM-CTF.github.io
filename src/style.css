@@ -27,6 +27,10 @@ h1::after {
     height: 2px;
     background-color: #e87638;
 }
+a, .flag{
+    color: #e87638;
+}
+
 #flagForm {
     position: relative;
     display: flex;
@@ -87,22 +91,55 @@ h1::after {
 }
 
 .dialog-box {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #323232;
-    color: #f9f9f9;
+    width: 300px;
+    margin: 50px auto;
     padding: 20px;
-    border-radius: 8px;
-    z-index: 1000;
+    text-align: center;
+    display: none; /* Initially hidden */
 }
-.dialog-box button {
-    margin-top: 10px;
+.agent-speech-box {
+    position: relative;
+    background: #fff;
+    border-radius: .4em;
     padding: 10px;
-    border: none;
+    text-align: left;
+    display: inline-block;
+    max-width: 250px;
+    margin-bottom: 10px;
+    color: #e87638;
+}
+
+.agent-speech-box::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 10px;
+    margin-left: -10px;
+}
+.player-speech-box {
+    position: relative;
+    margin-top: 20px;
+    padding: 10px 20px; /* Adjust padding as needed */
     background-color: #e87638;
-    color: #fff;
+    color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition for smoother hover effect */
+}
+.player-speech-box::after {
+    content: '〉';
+    margin-left: 10px; /* Space between text and arrow */
+}
+.player-speech-box:hover {
+    background-color: #e59367; /* Darken the background color on hover */
+}
+.player-speech-box:disabled {
+    background-color: #ccc;
 }
