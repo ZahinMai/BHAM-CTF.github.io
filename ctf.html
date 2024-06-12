@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF (in development)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onkeypress="KeyPressCheck(event)">
+    <div class="container" id="contentContainer">
+        <h1 id="stage-title"></h1>
+        <div id="instruction"></div>
+        <a id="downloadLink" href="data:text/plain;charset=utf-8,ctf{the-second-flag}" download="flag-2.txt" style="display: none;">Download Challenge</a>
+        <br>
+        <div id="flagForm">
+            <input type="text" id="flagInput" placeholder="Flag">
+            <button id="submitBtn">▷</button>
+        </div>
+        <button onclick="showHint()">Show Hint</button>
+        <p id="hint" style="display: none;"></p>
+        <div class="alert" id="alert"></div>
+    </div>
+    <div class="phone-call" id="phoneCall" onclick="showDialog()">
+        <img src="ringing-phone.gif" alt="Phone ringing">
+    </div>
+    
+    <div class="dialog-box" id="dialogBox">
+        <div id="agent-dialogue" class="agent-speech-box"></div>
+        <div id="player-dialogue" class="player-speech-box" onclick="nextDialogue()"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
