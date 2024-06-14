@@ -9,7 +9,7 @@
 ## Challenge 1 - Getting started
 ### Challenge instructions
 - A capture-the-flag (CTF) is a competition where you solve a number of challenges to test your cybersecurity skills by solving problems to find flags.
-- All flags in our CTF will be in the following format: ctf{capture-the-flag}.
+- All flags in our CTF will be in the following format: **ctf{capture-the-flag}**.
 - You can solve the first challenge right now by submitting this flag. (Note: flags are NOT case-sensitive!)
   
 ### Intended solve
