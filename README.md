@@ -29,7 +29,7 @@ ctf{capture-the-flag}
 - Click on the ‘DOWNLOAD CHALLENGE’ button to download the [challenge files](/src/flag-2.txt) and find the flag to submit!
   
 ### Intended solve
-[The linked file](/src/flag-2.txt) contains the flag: **ctf{the-second-flag}**
+[The linked file](/src/flag-2.txt) contains the flag: "**ctf{the-second-flag}**"
 
 #### Flag:
 ```
@@ -69,7 +69,7 @@ ctf{ada-lovelace}
 - Cryptography
   
 ### Intended solve
-Morse code for blink:
+Morse code for "blink":
 -... .-.. .. -. -.-  
 _with short flashes representing dots, and longer flashes representing dashes._
 
@@ -137,7 +137,7 @@ ctf{caesar}
 - Cryptography
 
 ### Intended solve
-Within the text is a Caesar cipher of "ctf{I-came-I-saw-I-conquered}", which has been shifted by 7 characters. To decrypt, a rotational shift of 19 is used. The flag is within the decrypted text.
+Within the text is a Caesar cipher of "**ctf{I-came-I-saw-I-conquered}**", which has been shifted by 7 characters. To decrypt, a rotational shift of 19 is used. The flag is within the decrypted text.
 
 #### Flag:
 ```
