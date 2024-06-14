@@ -23,14 +23,14 @@ nav a {
     transition: color 0.3s;
 }
 
-nav .logo {
+#nav-logo {
     font-size: 1.5rem;
     font-weight: bold;
     margin-right: auto;
 }
 
-nav a:hover {
-    color: #a8d5d2;
+.nav-link:hover {
+    color: #29a243;
 }
 
 nav .account-icon {
@@ -89,11 +89,57 @@ footer {
     width: 100%;
 }
 
-
 img {
     height: 200px; /* Set a fixed height for all images */
     width: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Ensure the image covers the set height and crop if necessary */
     margin-bottom: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Styles for the dialog box */
+.dialog {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    bottom: 20px; /* Position at the bottom */
+    right: 20px; /* Position at the right */
+    width: 300px; /* Set a fixed width */
+    z-index: 1000; /* Sit on top of other content */
+}
+
+.dialog-content {
+    color: #262e74; /* Dark background */
+    background-color: #fff; /* White text */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1px 20px; /* Padding around the content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    position: relative; /* For the close button */
+}
+
+/* Triangle to make dialog box look like speech box */
+.dialog-content::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent; /* Arrow pointing down */
+}
+
+.close-button {
+    position: absolute; /* Position it within the dialog */
+    top: 10px; /* Align at the top */
+    right: 10px; /* Align at the right */
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #fff; /* Change color on hover/focus */
 }
