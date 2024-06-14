@@ -168,7 +168,15 @@ Caesar once said...
 
 ---
 
-
 # Intermediate
+
+- Hello, this is Agent Grey from the Cybersecurity Task Force. Well done on solving the initial challenges. We need your help on a high-priority mission.
+- _Thank you. What's the mission?_
+- We’ve identified a rogue website crucial to an underground network. Your task is to infiltrate it, bypass its security, and extract encrypted communication logs, user databases, and transaction records.
+- _Understood. What vulnerabilities do we know of so far?_
+- The login system might be susceptible to SQL injection, and there’s an outdated encryption library. Expect firewalls, intrusion detection, and obfuscated code.
+- _Got it. We'll do our best._
+- Failure is not an option and time is critical. Act swiftly to prevent further damage and gather intel to dismantle their network. Good luck!
+- _Thank you. We won't let you down!_
 
 ### Challenge 8
