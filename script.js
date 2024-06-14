@@ -1,23 +1,23 @@
 let FLAGS = ["ctf{capture-the-flag}", "ctf{the-second-flag}", "ctf{augusta-ada-king}", "ctf{blink}", "ctf{binary}", "ctf{caesar}", "ctf{I-came-I-saw-I-conquered}"];
 
-let INSTRUCTIONS = []/*
-    "A capture-the-flag (CTF) is a competition where you solve a number of challenges to test your cybersecurity skills by solving problems to recover flags. All flags in our CTF will be in the following format: ctf{capture-the-flag}. You can solve the first challenge right now by submitting this flag \n (Note: flags are NOT case-sensitive!)",
+let INSTRUCTIONS = [
+    "A capture-the-flag (CTF) is a competition where you solve a number of challenges to test your cybersecurity skills by solving problems to find flags. All flags in our CTF will be in the following format: ctf{capture-the-flag}. You can solve the first challenge right now by submitting this flag \n (Note: flags are NOT case-sensitive!)",
     "Some challenges require you to download files in order to be able to solve them. Click on the ‘DOWNLOAD CHALLENGE’ button to download the challenge and find the flag!",
-    "Here's a free flag up for grabs. Who is referred to as the known as the 'World's First Programmer'? (Enter as ctf{firstname-middlename-surname})",
+    "Here's another flag up for grabs. Who is referred to as the known as the 'World's First Programmer'? Enter in the format ctf{firstname-surname}!",
     "Some challenges will involve hardware. In this challenge, each team has been provided with their opponent's flag. You must communicate the first clue to the opposing team via morse code using a blinking LED.",
     "Sometimes you'll be asked to solve riddles. Solve this riddle to obtain the next flag: \n 'In ones and zeroes, I am found,\nA language without a sound.\nWith just two digits, I convey,\nAll about computing, every day.'",
     "Beneath the surface, the source resides. Hidden in code, secrets abide.",
-    "LOokSlIKethefLaGGotlOstiNthistextJAM{P-jhtl-P-zhd-P-jvuxblylk}buTuNeedtoshiftiTtoenter...",
-];*/
+    "LOokSlIKethefLaGGotlOstiNthistextjam{P-jhtl-P-zhd-P-jvuxblylk}buTuNeedtoshiftiTtoenter...",
+];
 
 let TITLES = [
-    "1. Getting Started",
-    "2. Downloadable Challenges",
-    "3. Trivia Time",
-    "4. A Cooperative Clue",
-    "5. What Am I?",
-    "6. Out of Sight",
-    "7. Shifty Statements"
+    "1. Getting started",
+    "2. Downloadable challenges",
+    "3. Trivia time",
+    "4. A cooperative clue",
+    "5. What am I?",
+    "6. Out of sight",
+    "7. Shifty statements"
 ];
 
 let HINTS = [
@@ -30,10 +30,10 @@ let HINTS = [
     "Caesar said:"
 ];
 
-let AGENT = ["Hello, this is Agent Grey from the Cybersecurity Task Force. Congrats on solving the initial challenges. We need your help on a high-priority mission.",
+let AGENT = ["Hello, this is Agent Grey from the Cybersecurity Task Force. Well done on solving the initial challenges. We need your help on a high-priority mission.",
             "We’ve identified a rogue website crucial to an underground network. Your task is to infiltrate it, bypass its security, and extract encrypted communication logs, user databases, and transaction records.",
             "The login system might be susceptible to SQL injection, and there’s an outdated encryption library. Expect firewalls, intrusion detection, and obfuscated code.",
-            "Faliure is not an option and time is critical. Act swiftly to prevent further damage and gather intel to dismantle their network. Good luck!"
+            "Failure is not an option and time is critical. Act swiftly to prevent further damage and gather intel to dismantle their network. Good luck!"
 ]
 
 let PLAYER = ["Thank you. What’s the mission?",
@@ -116,4 +116,8 @@ function showDialog() {
     document.getElementById("phoneCall").style.display = "none";
     document.getElementById("dialogBox").style.display = "block";
     nextDialogue();
+}
+
+function closeDialog() {
+    document.getElementById("dialogBox").style.display = "none";
 }
