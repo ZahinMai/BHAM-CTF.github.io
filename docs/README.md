@@ -44,7 +44,7 @@
 
 # Intermediate
 
-## Challenge 3 - A cooperative clue
+## Challenge 4 - A cooperative clue
 ### Challenge instructions
 - Each team has been provided with their opponent's flag.
 - You must communicate the first clue to the opposing team in morse code using a blinking LED.
@@ -65,9 +65,12 @@ Each flag is in the format: _ctf{flag_goes_here}_, where _"flag_goes_here"_ is r
 
 ---
 
-## Challenge 4 - What am I?
+## Challenge 5 - What am I?
 ### Challenge instructions
-- 'In ones and zeroes,  I am found,  
+- Sometimes you'll be asked to solve riddles.
+- Solve the following riddle to obtain the next flag:
+  
+  'In ones and zeroes,  I am found,  
   A language without a sound.  
   With just two digits, I convey.   
   All about computing, every day.'
@@ -83,7 +86,7 @@ The answer to the riddle is **binary**.
 
 ---
 
-## Challenge 5 - Out of sight
+## Challenge 6 - Out of sight
 ### Challenge instructions
 - Beneath the surface, the source resides. Hidden in code, secrets abide.
 
@@ -98,12 +101,12 @@ Hidden as a comment in the source code is **caesar**.
 
 ---
 
-## Challenge 6 - Shifty statements
+## Challenge 7 - Shifty statements
 ### Challenge instructions
-ab3fjam{P-jhtl-P-zhd-P-jvuxblylk}7q2x
+- LOokSlIKethefLaGGotlOstiNthistextjam{P-jhtl-P-zhd-P-jvuxblylk}buTuNeedtoshiftiTtoenter...
 
 ### Intended solve
-This is a Caesar cipher of "tu3yctf{I-came-I-saw-I-conquered}7j2q", which has been shifted by 7 characters. To decrypt, a rotational shift of 19 is used. The flag is within the decrypted text.
+Within the text is a Caesar cipher of "ctf{I-came-I-saw-I-conquered}", which has been shifted by 7 characters. To decrypt, a rotational shift of 19 is used. The flag is within the decrypted text.
 
 #### Flag: ctf{I-came-I-saw-I-conquered}
 
