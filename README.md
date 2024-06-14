@@ -19,10 +19,7 @@
 ctf{capture-the-flag}
 ```
 
-#### Hint:
-```
-Copy and paste the highlighted flag.
-```
+**Hint: `Copy and paste the highlighted flag.`**
 
 ---
 
@@ -32,17 +29,14 @@ Copy and paste the highlighted flag.
 - Click on the ‘DOWNLOAD CHALLENGE’ button to download the [challenge files](/src/flag-2.txt) and find the flag to submit!
   
 ### Intended solve
-[The linked file](/src/flag-2.txt) contains the flag: ctf{the-second-flag}
+[The linked file](/src/flag-2.txt) contains the flag: **ctf{the-second-flag}**
 
 #### Flag:
 ```
 ctf{the-second-flag}
 ```
 
-#### Hint:
-```
-The flag is in the downloaded text file.
-```
+**Hint: `The flag is in the downloaded text file.`**
 
 --- 
 
@@ -59,10 +53,7 @@ The flag is in the downloaded text file.
 ctf{ada-lovelace}
 ```  
 
-#### Hint:
-```
-She was Countess of Lovelace, but what is her real name?
-```
+**Hint: `She was Countess of Lovelace, but what is her full name?`**
 
 --- 
 
@@ -89,10 +80,7 @@ Each flag is in the format: _ctf{flag_goes_here}_, where _"flag_goes_here"_ is r
 ctf{blink}
 ```
 
-#### Hint:
-```
-Keeping your opponent’s flag from them is not an option as it will be an instant fail.
-```
+**Hint: `Keeping your opponent’s flag from them is not an option as it will be an instant fail.`**
 
 ---
 
@@ -118,11 +106,7 @@ The answer to the riddle is **binary**.
 ctf{binary}
 ```
 
-#### Hint:
-```
-Please, you don't need a clue for this.
-```
-
+**Hint: `Please, you don't need a clue for this.`**
 
 ---
 
@@ -142,10 +126,7 @@ Hidden as a comment in the source code is **`<!-- The flag for challenge 6 is ct
 ctf{caesar}
 ```
 
-#### Hint:
-```
-Inspect the page source. The flag is hidden there.
-```
+**Hint: `Inspect the page source. The flag is hidden there.`**
 
 ---
 
@@ -165,10 +146,7 @@ Within the text is a Caesar cipher of "ctf{I-came-I-saw-I-conquered}", which has
 ctf{I-came-I-saw-I-conquered}
 ```
 
-#### Hint:
-```
-Caesar once said...
-```
+**Hint: `Caesar once said...`**
 
 ---
 
