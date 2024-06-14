@@ -1,6 +1,6 @@
 let FLAGS = ["ctf{capture-the-flag}", "ctf{the-second-flag}", "ctf{augusta-ada-king}", "ctf{blink}", "ctf{binary}", "ctf{caesar}", "ctf{I-came-I saw-I-conquered}"];
 
-let INSTRUCTIONS = [];/*
+let INSTRUCTIONS = [
     "A Capture the Flag (CTF) is a competition where you solve a number of challenges to test yor cybsecurity skills by solving problems to recover flags. ALL flags in our CTF will look something like this: ctf{capture-the-flag}.  You can solve the first challenge right now by submitting this flag \n (Note: flags are NOT case-sensitive)",
     "Some challenges require you to download files in order to be able to solve them. Click on the ‘DOWNLOAD CHALLENGE’ button to download the challenge and submit the flag!",
     "Here's a free flag up for grabs. Who is referred to as the known as the 'World's First Programmer'? (Enter as ctf{firstname-middlename-surname})",
@@ -9,7 +9,7 @@ let INSTRUCTIONS = [];/*
     "Beneath the surface, the source resides. Hidden in code, secrets abide.",
     "LOokSlIKethefLaGGotlOstiNthistextJAM{P-jhtl-P-zhd-P-jvuxblylk}buTuNeedtoshiftiTtoenter...",
 ];
-*/
+
 let TITLES = [
     "1. Getting Started",
     "2. Downloadable Challenges",
