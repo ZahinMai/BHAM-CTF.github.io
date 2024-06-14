@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products - The Cauldron</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
-    <link href="cauldron.css" rel = "stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="cauldron.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <header class="header">
+       
+        <nav>
+            <ul class="nav-links">
+                <li><a href="login.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="product-container">
         <h1>Welcome to The Cauldron</h1>
         <h2>Our Magical Products</h2>
         <div class="product-list">
@@ -17,7 +29,8 @@
                 <div class="product-details">
                     <h3 class="product-title">Elixir of Life</h3>
                     <p class="product-description">A magical potion that grants the drinker extended life and vitality.</p>
-                    <p class="product-price">$99.99</p>
+                    <p class="product-price">£99.99</p>
+                    <button class="buy-button">Buy Now</button>
                 </div>
             </div>
             <div class="product-item">
@@ -25,7 +38,8 @@
                 <div class="product-details">
                     <h3 class="product-title">Invisibility Cloak</h3>
                     <p class="product-description">A cloak that renders the wearer completely invisible to the naked eye.</p>
-                    <p class="product-price">$299.99</p>
+                    <p class="product-price">£299.99</p>
+                    <button class="buy-button">Buy Now</button>
                 </div>
             </div>
             <div class="product-item">
@@ -33,7 +47,8 @@
                 <div class="product-details">
                     <h3 class="product-title">Wand of Wonders</h3>
                     <p class="product-description">A wand with unpredictable magical effects that amaze and astonish.</p>
-                    <p class="product-price">$149.99</p>
+                    <p class="product-price">£149.99</p>
+                    <button class="buy-button">Buy Now</button>
                 </div>
             </div>
             <div class="product-item">
@@ -41,25 +56,29 @@
                 <div class="product-details">
                     <h3 class="product-title">Wand of Wonders</h3>
                     <p class="product-description">A wand with unpredictable magical effects that amaze and astonish.</p>
-                    <p class="product-price">$149.99</p>
+                    <p class="product-price">£149.99</p>
+                    <button class="buy-button">Buy Now</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x200?text=Wand+of+Wonders" alt="Wand of Wonders" class="product-image">
+                <div class="product-details">
+                    <h3 class="product-title">Wand of Wonders</h3>
+                    <p class="product-description">A wand with unpredictable magical effects that amaze and astonish.</p>
+                    <p class="product-price">£149.99</p>
+                    <button class="buy-button">Buy Now</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x200?text=Wand+of+Wonders" alt="Wand of Wonders" class="product-image">
+                <div class="product-details">
+                    <h3 class="product-title">Wand of Wonders</h3>
+                    <p class="product-description">A wand with unpredictable magical effects that amaze and astonish.</p>
+                    <p class="product-price">£149.99</p>
+                    <button class="buy-button">Buy Now</button>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Dialog Box and Overlay -->
-    <div id="overlay" class="overlay">
-        <div class="dialog">
-            <button class="close-btn" onclick="closeDialog()">&times;</button>
-            <p>Welcome to The Cauldron! Check out our magical products.</p>
-        </div>
-    </div>
-
-    <script>
-        // JavaScript to close the dialog
-        function closeDialog() {
-            document.getElementById('overlay').classList.add('hidden');
-        }
-    </script>
 </body>
 </html>

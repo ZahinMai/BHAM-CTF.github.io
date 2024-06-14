@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Cauldron</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+    <title>Login - The Cauldron</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link href="cauldron.css" rel="stylesheet">
 </head>
 <body>
-    
-    <div class="container">
+    <div class="login-container">
         <img class="logo" src="green-cauldron.png" alt="Cauldron">
         <h3>Only Members Can View Our Products</h3>
         <h1>Sign in to Shop</h1>
@@ -28,9 +27,9 @@
             var password = document.getElementById("password").value;
 
             // Simulating authentication with SQL query
-            if (username === "mystic' --" && password === "") {
+            if (username === "mystic' --") {
                 // Successful login
-                window.location.href = "products.html"; // Redirect to products page
+                window.location.href = "home.html"; // redirect to home page
                 document.getElementById("alert").innerText = "Welcome, Mystic Traveler! Flag: CTF{abracadabra}";
                 document.getElementById("alert").style.display = "block";
             } else {

@@ -97,11 +97,14 @@ a, .flag{
     text-align: center;
     display: none; /* Initially hidden */
 }
+
+.agent-speech-box, .player-speech-box{
+    padding: 10px 20px; /* Adjust padding as needed */
+}
 .agent-speech-box {
     position: relative;
     background: #fff;
     border-radius: .4em;
-    padding: 10px;
     text-align: left;
     display: inline-block;
     max-width: 250px;
@@ -109,23 +112,9 @@ a, .flag{
     color: #e87638;
 }
 
-.agent-speech-box::after {
-    content: '';
-    position: absolute;
-    bottom: 100%;
-    left: 20px;
-    width: 0;
-    height: 0;
-    border: solid transparent;
-    border-color: rgba(255, 255, 255, 0);
-    border-bottom-color: #fff;
-    border-width: 10px;
-    margin-left: -10px;
-}
 .player-speech-box {
     position: relative;
     margin-top: 20px;
-    padding: 10px 20px; /* Adjust padding as needed */
     background-color: #e87638;
     color: white;
     border: none;
@@ -133,13 +122,34 @@ a, .flag{
     cursor: pointer;
     transition: background-color 0.3s ease; /* Add transition for smoother hover effect */
 }
-.player-speech-box::after {
-    content: '〉';
-    margin-left: 10px; /* Space between text and arrow */
+
+.agent-speech-box::after, .player-speech-box::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    border-color: rgba(255, 255, 255, 0);
+    
+    border-width: 10px;
 }
-.player-speech-box:hover {
-    background-color: #e59367; /* Darken the background color on hover */
+.agent-speech-box::after{
+    right: 96%; /* Position arrow at the left */
+    border-top-color: #fff; /* Arrow color same as the background */
+}
+
+.player-speech-box::after {
+    left: 96%; /* Position arrow at the right */
+    border-bottom-color: #e87638; /* Arrow color same as the background */
+}
+
+.player-speech-box:hover{
+    background-color: #e59367; /* Change background color on hover */
 }
 .player-speech-box:disabled {
     background-color: #ccc;
+}
+
+#redirect{
+    display: none;
 }
