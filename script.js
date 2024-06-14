@@ -7,7 +7,7 @@ let INSTRUCTIONS = [
     "Some challenges will involve hardware. In this challenge, each team has been provided with their opponent's flag. You must communicate the first clue to the opposing team via morse code using a blinking LED.",
     "Sometimes you'll be asked to solve riddles. Solve this riddle to obtain the next flag: \n 'In ones and zeroes, I am found,\nA language without a sound.\nWith just two digits, I convey,\nAll about computing, every day.'",
     "Beneath the surface, the source resides. Hidden in code, secrets abide.",
-    "LOokSlIKethefLaGGotlOstiNthistextJAM{P-jhtl-P-zhd-P-jvuxblylk}buTuNeedtoshiftiTtoenter...",
+    "LOokSlIKethefLaGGotlOstiNthistextjam{P-jhtl-P-zhd-P-jvuxblylk}buTuNeedtoshiftiTtoenter...",
 ];
 
 let TITLES = [
