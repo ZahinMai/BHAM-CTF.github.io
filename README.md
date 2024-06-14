@@ -159,7 +159,7 @@ ctf{I-came-I-saw-I-conquered}
 - Failure is not an option and time is critical. Act swiftly to prevent further damage and gather intel to dismantle their network. Good luck!
 - _Thank you. We won't let you down!_
 
-### Challenge 8
+## Challenge 8
 
 ---
 
