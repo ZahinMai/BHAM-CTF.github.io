@@ -8,11 +8,11 @@
 </head>
 <body>
     <nav>
-        <a href="#" class="logo">The Cauldron</a>
-        <a href="#">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="#" id="nav-logo">The <span class="highlight">Cauldron</span></a>
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Shop</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Contact</a>
         <a href="#" class="account-icon">&#128100;</a>
     </nav>
     <div class="container">
@@ -75,6 +75,13 @@
                 </div>
             </div>
         </section>
+    </div>
+    <div id="dialog" class="dialog">
+        <div class="dialog-content">
+            <span class="close-button" onclick="closeDialog()">&times;</span>
+            <h4>New Message from Agent Grey</h4>
+            <p>The products sold here look very suspicious. We have received intel that one of these products is disguising an illegal substance</p>
+        </div>
     </div>
     <footer class="footer">
         <p>&copy; 2024 The Cauldron. All rights reserved.</p>
