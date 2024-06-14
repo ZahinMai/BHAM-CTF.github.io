@@ -2,8 +2,8 @@ let FLAGS = ["ctf{capture-the-flag}", "ctf{the-second-flag}", "ctf{ada-lovelace}
 
 let INSTRUCTIONS = [
     "A capture-the-flag (CTF) is a competition where you solve a number of challenges to test your cybersecurity skills by solving problems to find flags. All flags in our CTF will be in the following format: ctf{capture-the-flag}. You can solve the first challenge right now by submitting this flag \n (Note: flags are NOT case-sensitive!)",
-    "Some challenges require you to download files in order to be able to solve them. Click on the ‘DOWNLOAD CHALLENGE’ button to download the challenge and find the flag!",
-    "Here's another flag up for grabs. Who is referred to as the known as the 'World's First Programmer'? Enter in the format ctf{firstname-surname}!",
+    "Some challenges require you to download files in order to be able to solve them. Click on the ‘Download challenge’ button to download the challenge and find the flag!",
+    "Here's another flag up for grabs. Who is referred to as the known as the 'World's First Programmer'? \nEnter the flag in the format ctf{firstname-surname}!",
     "Some challenges will involve hardware. In this challenge, each team has been provided with their opponent's flag. You must communicate the first clue to the opposing team via morse code using a blinking LED.",
     "Sometimes you'll be asked to solve riddles. Solve this riddle to obtain the next flag: \n 'In ones and zeroes, I am found,\nA language without a sound.\nWith just two digits, I convey,\nAll about computing, every day.'",
     "Beneath the surface, the source resides. Hidden in code, secrets abide.",
@@ -23,7 +23,7 @@ let TITLES = [
 let HINTS = [
     "Copy and paste the highlighted flag.",
     "The flag is in the downloaded text file.",
-    "She was Countess of Lovelace, but what is her real name?",
+    "She was Countess of Lovelace, but what is her full name?",
     "Keeping your opponent’s flag from them is not an option as it will be an instant fail.",
     "Please, you don't need a clue for this.",
     "Inspect the page source. The flag is hidden there.",
