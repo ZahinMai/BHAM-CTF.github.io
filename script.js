@@ -11,13 +11,13 @@ let INSTRUCTIONS = [
 ];
 
 let TITLES = [
-    "1. Getting Started",
-    "2. Downloadable Challenges",
-    "3. Trivia Time",
-    "4. A Cooperative Clue",
-    "5. What Am I?",
-    "6. Out of Sight",
-    "7. Shifty Statements"
+    "1. Getting started",
+    "2. Downloadable challenges",
+    "3. Trivia time",
+    "4. A cooperative clue",
+    "5. What am I?",
+    "6. Out of sight",
+    "7. Shifty statements"
 ];
 
 let HINTS = [
