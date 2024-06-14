@@ -1,4 +1,4 @@
-let FLAGS = ["ctf{capture-the-flag}", "ctf{the-second-flag}", "ctf{augusta-ada-king}", "ctf{blink}", "ctf{binary}", "ctf{caesar}", "ctf{I-came-I-saw-I-conquered}"];
+let FLAGS = ["ctf{capture-the-flag}", "ctf{the-second-flag}", "ctf{ada-lovelace}", "ctf{blink}", "ctf{binary}", "ctf{caesar}", "ctf{I-came-I-saw-I-conquered}"];
 
 let INSTRUCTIONS = [
     "A capture-the-flag (CTF) is a competition where you solve a number of challenges to test your cybersecurity skills by solving problems to find flags. All flags in our CTF will be in the following format: ctf{capture-the-flag}. You can solve the first challenge right now by submitting this flag \n (Note: flags are NOT case-sensitive!)",
