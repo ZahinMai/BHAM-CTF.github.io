@@ -2,7 +2,7 @@
 
 **Target age range: 14-18 (Years 10 - 13)**
 
-**Team size: 3-4**
+**Recommended team size: 3-4**
 
 # Beginner (tutorial challenges)
 
