@@ -30,10 +30,10 @@ let HINTS = [
     "Caesar said:"
 ];
 
-let AGENT = ["Hello, this is Agent Grey from the Cybersecurity Task Force. Congrats on solving the initial challenges. We need your help on a high-priority mission.",
+let AGENT = ["Hello, this is Agent Grey from the Cybersecurity Task Force. Well done on solving the initial challenges. We need your help on a high-priority mission.",
             "We’ve identified a rogue website crucial to an underground network. Your task is to infiltrate it, bypass its security, and extract encrypted communication logs, user databases, and transaction records.",
             "The login system might be susceptible to SQL injection, and there’s an outdated encryption library. Expect firewalls, intrusion detection, and obfuscated code.",
-            "Faliure is not an option and time is critical. Act swiftly to prevent further damage and gather intel to dismantle their network. Good luck!"
+            "Failure is not an option and time is critical. Act swiftly to prevent further damage and gather intel to dismantle their network. Good luck!"
 ]
 
 let PLAYER = ["Thank you. What’s the mission?",
