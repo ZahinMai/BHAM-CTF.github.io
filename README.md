@@ -153,6 +153,10 @@ Inspect the page source. The flag is hidden there.
 ### Challenge instructions
 - LOokSlIKethefLaGGotlOstiNthistextjam{P-jhtl-P-zhd-P-jvuxblylk}buTuNeedtoshiftiTtoenter...
 
+### Skills
+- Problem solving
+- Cryptography
+
 ### Intended solve
 Within the text is a Caesar cipher of "ctf{I-came-I-saw-I-conquered}", which has been shifted by 7 characters. To decrypt, a rotational shift of 19 is used. The flag is within the decrypted text.
 
