@@ -8,9 +8,9 @@
 
 ## Challenge 1 - Getting started
 ### Challenge instructions
-- A capture the flag (CTF) is a competition where you solve a number of challenges to test your cybersecurity skills by solving problems to recover flags.
-- All flags in our CTF will look something like this: ctf{capture-the-flag}.
-- You can solve the first challenge right now by submitting this flag.
+- A capture-the-flag (CTF) is a competition where you solve a number of challenges to test your cybersecurity skills by solving problems to find flags.
+- All flags in our CTF will be in the following format: ctf{capture-the-flag}.
+- You can solve the first challenge right now by submitting this flag. (Note: flags are NOT case-sensitive!)
   
 ### Intended solve
 
@@ -27,6 +27,18 @@
 [The linked file](/src/flag-2.txt) contains the flag: ctf{the-second-flag}
 
 #### Flag: ctf{the-second-flag}  
+
+--- 
+
+## Challenge 3 - Trivia time
+### Challenge instructions
+- Here's another flag up for grabs. Who is referred to as the known as the 'World's First Programmer'?
+- Enter the flag in the format ctf{firstname-surname}!
+  
+### Intended solve
+**Ada Lovelace** is commonly referred to as the 'World's First Programmer'.
+
+#### Flag: ctf{ada-lovelace}  
 
 --- 
 
