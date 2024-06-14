@@ -135,7 +135,7 @@ Please, you don't need a clue for this.
 - Knowledge of HTML comments
 
 ### Intended solve
-Hidden as a comment in the source code is **caesar**.
+Hidden as a comment in the source code is **`<!-- The flag for challenge 6 is ctf{caesar} -->`**.
 
 #### Flag:
 ```
