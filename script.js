@@ -1,10 +1,10 @@
-let FLAGS = ["ctf{capture-the-flag}", "ctf{the-second-flag}", "ctf{augusta-ada-king}", "ctf{blink}", "ctf{binary}", "ctf{caesar}", "ctf{I-came-I saw-I-conquered}"];
+let FLAGS = ["ctf{capture-the-flag}", "ctf{the-second-flag}", "ctf{augusta-ada-king}", "ctf{blink}", "ctf{binary}", "ctf{caesar}", "ctf{I-came-I-saw-I-conquered}"];
 
 let INSTRUCTIONS = [
-    "A Capture the Flag (CTF) is a competition where you solve a number of challenges to test yor cybsecurity skills by solving problems to recover flags. ALL flags in our CTF will look something like this: ctf{capture-the-flag}.  You can solve the first challenge right now by submitting this flag \n (Note: flags are NOT case-sensitive)",
-    "Some challenges require you to download files in order to be able to solve them. Click on the ‘DOWNLOAD CHALLENGE’ button to download the challenge and submit the flag!",
+    "A capture-the-flag (CTF) is a competition where you solve a number of challenges to test your cybersecurity skills by solving problems to recover flags. All flags in our CTF will be in the following format: ctf{capture-the-flag}. You can solve the first challenge right now by submitting this flag \n (Note: flags are NOT case-sensitive!)",
+    "Some challenges require you to download files in order to be able to solve them. Click on the ‘DOWNLOAD CHALLENGE’ button to download the challenge and find the flag!",
     "Here's a free flag up for grabs. Who is referred to as the known as the 'World's First Programmer'? (Enter as ctf{firstname-middlename-surname})",
-    "Some challenges will involve hardware. In thhis challenge, each team has been provided with their opponent's flag. You must communicate the first clue to the opposing team via morse code using a blinking LED.",
+    "Some challenges will involve hardware. In this challenge, each team has been provided with their opponent's flag. You must communicate the first clue to the opposing team via morse code using a blinking LED.",
     "Sometimes you'll be asked to solve riddles. Solve this riddle to obtain the next flag: \n 'In ones and zeroes, I am found,\nA language without a sound.\nWith just two digits, I convey,\nAll about computing, every day.'",
     "Beneath the surface, the source resides. Hidden in code, secrets abide.",
     "LOokSlIKethefLaGGotlOstiNthistextJAM{P-jhtl-P-zhd-P-jvuxblylk}buTuNeedtoshiftiTtoenter...",
