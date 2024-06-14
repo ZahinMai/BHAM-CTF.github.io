@@ -14,7 +14,11 @@
   
 ### Intended solve
 
-#### Flag: ctf{capture-the-flag}
+#### Flag: 
+```ctf{capture-the-flag}```
+
+#### Hint:
+```Copy and paste the highlighted flag.```
 
 ---
 
@@ -26,7 +30,11 @@
 ### Intended solve
 [The linked file](/src/flag-2.txt) contains the flag: ctf{the-second-flag}
 
-#### Flag: ctf{the-second-flag}  
+#### Flag:
+```ctf{the-second-flag}```
+
+#### Hint:
+```The flag is in the downloaded text file.```
 
 --- 
 
@@ -34,11 +42,15 @@
 ### Challenge instructions
 - Here's another flag up for grabs. Who is referred to as the known as the 'World's First Programmer'?
 - Enter the flag in the format ctf{firstname-surname}!
-  
+
 ### Intended solve
 **Ada Lovelace** is commonly referred to as the 'World's First Programmer'.
 
-#### Flag: ctf{ada-lovelace}  
+#### Flag:
+```ctf{ada-lovelace}```  
+
+#### Hint:
+```She was Countess of Lovelace, but what is her real name?```
 
 --- 
 
@@ -48,6 +60,7 @@
 ### Challenge instructions
 - Each team has been provided with their opponent's flag.
 - You must communicate the first clue to the opposing team in morse code using a blinking LED.
+
   
 ### Skills
 - Morse code
@@ -61,7 +74,11 @@ _with short flashes representing dots, and longer flashes representing dashes._
 
 Each flag is in the format: _ctf{flag_goes_here}_, where _"flag_goes_here"_ is replaced by the word/phrase you find is the flag.
 
-#### Flag: ctf{blink}
+#### Flag:
+```ctf{blink}```
+
+#### Hint:
+```Keeping your opponent’s flag from them is not an option as it will be an instant fail.```
 
 ---
 
@@ -82,7 +99,12 @@ Each flag is in the format: _ctf{flag_goes_here}_, where _"flag_goes_here"_ is r
 ### Intended solve
 The answer to the riddle is **binary**.
 
-#### Flag: ctf{binary}
+#### Flag:
+```ctf{binary}```
+
+#### Hint:
+```Please, you don't need a clue for this.```
+
 
 ---
 
@@ -97,7 +119,11 @@ The answer to the riddle is **binary**.
 ### Intended solve
 Hidden as a comment in the source code is **caesar**.
 
-#### Flag: ctf{caesar}
+#### Flag:
+```ctf{caesar}```
+
+#### Hint:
+```Inspect the page source. The flag is hidden there.```
 
 ---
 
@@ -108,7 +134,11 @@ Hidden as a comment in the source code is **caesar**.
 ### Intended solve
 Within the text is a Caesar cipher of "ctf{I-came-I-saw-I-conquered}", which has been shifted by 7 characters. To decrypt, a rotational shift of 19 is used. The flag is within the decrypted text.
 
-#### Flag: ctf{I-came-I-saw-I-conquered}
+#### Flag:
+```ctf{I-came-I-saw-I-conquered}```
+
+#### Hint:
+```Caesar once said...```
 
 ---
 
