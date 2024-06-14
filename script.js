@@ -68,10 +68,8 @@ function nextDialogue() {
         document.getElementById("player-dialogue").innerText = PLAYER[currentStep];
         currentStep++;
     } else {
-        document.getElementById("agent-dialogue").innerText = "Mission briefing complete. Good luck!";
-        document.getElementById("player-dialogue").disabled = true;
-        document.getElementById("player-dialogue").innerText = "End of Call";
-        closeDialog()
+        document.getElementById("dialogBox").style.display = "none";
+        document.getElementById("redirect").style.display = "block";
     }
 }
 
