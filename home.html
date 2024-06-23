@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Cauldron</title>
+    <title>The Cauldron - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/css/cauldron.css">
 </head>
 <body>
     <nav>
         <a href="#" id="nav-logo">The <span class="highlight">Cauldron</span></a>
+        <section class="search">
+            <form action="" method="GET">
+                <input type="text" name="query" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </section>
         <a href="#" class="nav-link">Home</a>
         <a href="#" class="nav-link">Shop</a>
         <a href="#" class="nav-link">About</a>
@@ -16,6 +23,10 @@
         <a href="#" class="account-icon">&#128100;</a>
     </nav>
     <div class="container">
+        <!-- Display search results -->
+        <div class="search-results">
+            <h2>Search Results for: <span id="search-query"></span></h2>
+        </div>
         <section class="featured-products">
             <h2 class="section-title">Featured products</h2>
             <div class="products">
@@ -29,7 +40,7 @@
                     <h3>Ring of invisibility</h3>
                     <p>£250</p>
                 </div>
-		<div class="product" onclick="success()">
+                <div class="product" onclick="success()">
                     <img src="static/images/dust.png" alt="dust" id="product3">
                     <h3>Dust of illusions</h3>
                     <p>£180</p>
@@ -76,17 +87,27 @@
             </div>
         </section>
     </div>
+    <!-- Dialog Box -->
     <div id="dialog" class="dialog">
         <div class="dialog-content">
             <span class="close-button" onclick="closeDialog()">&times;</span>
+            <h4>Limited Time Deals!</h4>
+            <p>Discover exclusive offers on mystical artifacts and potions. Hurry, while stocks last!</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </div>
+    <!--Agent Message -->
+    <div id="message" class="message">
+        <div class="message-content">
+            <span class="close-button" onclick="closeMessage()">&times;</span>
             <h4>New Message from Agent Grey</h4>
-            <p>The products sold here look very suspicious. We have received intel that one of these products is disguising an illegal substance</p>
+            <p>The products sold here look very suspicious. We have received intel that one of these products is disguising an illegal substance.</p>
         </div>
     </div>
     <footer class="footer">
         <p>&copy; 2024 The Cauldron. All rights reserved.</p>
     </footer>
-	<script src="static/scripts/cauldron-script.js"></script>
+    <script src="static/scripts/cauldron-script.js"></script>
 </body>
-
 </html>
+
