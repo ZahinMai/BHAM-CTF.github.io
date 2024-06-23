@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Security challenge CTF</title>
-    <link rel="stylesheet" href="static/css/intro-challs.css">
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body onkeypress="KeyPressCheck(event)">
     <div class="container" id="contentContainer">
@@ -29,7 +29,7 @@
         <div id="agent-dialogue" class="agent-speech-box"></div>
         <div id="player-dialogue" class="player-speech-box" onclick="nextDialogue()"></div>
     </div>
-    <button id="redirect">Click <a href="home.html" target="_blank">here</a> to go to our target website!</button>
-    <script src="static/scripts/intro-script.js"></script>
+    <div class="dialog-box" id="redirect" onclick="openWebsite()">Click here to open the website in a new tab</div>
+    <script src="intro-script.js"></script>
 </body>
 </html>
