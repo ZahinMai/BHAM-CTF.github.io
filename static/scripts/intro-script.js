@@ -1,15 +1,14 @@
-let FLAGS = ["ctf{capture-the-flag}", "ctf{the-second-flag}", "ctf{ada-lovelace}", "ctf{blink}", "ctf{binary}", "ctf{caesar}", "ctf{I-came-I-saw-I-conquered}"];
+let FLAGS = ["ctf{capture-the-flag}", "ctf{the-second-flag}", "ctf{augusta-ada-king}", "ctf{blink}", "ctf{binary}", "ctf{caesar}", "ctf{I-came-I-saw-I-conquered}"];
 
 let INSTRUCTIONS = [
-    "A capture-the-flag (CTF) is a competition where you solve a number of challenges to test your cybersecurity skills by solving problems to find flags. All flags in our CTF will be in the following format: ctf{capture-the-flag}. You can solve the first challenge right now by submitting this flag \n (Note: flags are NOT case-sensitive!)",
-    "Some challenges require you to download files in order to be able to solve them. Click on the ‘Download challenge’ button to download the challenge and find the flag!",
-    "Here's another flag up for grabs. Who is referred to as the known as the 'World's First Programmer'? \nEnter the flag in the format ctf{firstname-surname}!",
+    "A capture-the-flag (CTF) is a competition where you solve a number of challenges to test your cybersecurity skills by solving problems to find flags. All flags in our CTF will be in the following format: ctf{capture-the-flag}.<br><br>You can solve the first challenge by submitting the above flag <br><br><small>(Note that flags are NOT case-sensitive!)</small>",
+    "Some challenges require you to download files in order to be able to solve them. Click on the ‘DOWNLOAD CHALLENGE’ button to download the challenge and find the flag!",
+    "Here's another flag up for grabs. Who is referred to as the known as the 'World's First Programmer'? Enter in the format ctf{firstname-surname}!",
     "Some challenges will involve hardware. In this challenge, each team has been provided with their opponent's flag. You must communicate the first clue to the opposing team via morse code using a blinking LED.",
     "Sometimes you'll be asked to solve riddles. Solve this riddle to obtain the next flag: \n 'In ones and zeroes, I am found,\nA language without a sound.\nWith just two digits, I convey,\nAll about computing, every day.'",
     "Beneath the surface, the source resides. Hidden in code, secrets abide.",
     "LOokSlIKethefLaGGotlOstiNthistextjam{P-jhtl-P-zhd-P-jvuxblylk}buTuNeedtoshiftiTtoenter...",
 ];
-
 let TITLES = [
     "1. Getting started",
     "2. Downloadable challenges",
@@ -23,7 +22,7 @@ let TITLES = [
 let HINTS = [
     "Copy and paste the highlighted flag.",
     "The flag is in the downloaded text file.",
-    "She was Countess of Lovelace, but what is her full name?",
+    "She was Countess of Lovelace, but what was her real full name?",
     "Keeping your opponent’s flag from them is not an option as it will be an instant fail.",
     "Please, you don't need a clue for this.",
     "Inspect the page source. The flag is hidden there.",
@@ -31,8 +30,8 @@ let HINTS = [
 ];
 
 let AGENT = ["Hello, this is Agent Grey from the Cybersecurity Task Force. Well done on solving the initial challenges. We need your help on a high-priority mission.",
-            "We’ve identified a rogue website crucial to an underground network. Your task is to infiltrate it, bypass its security, and extract encrypted communication logs, user databases, and transaction records.",
-            "The login system might be susceptible to SQL injection, and there’s an outdated encryption library. Expect firewalls, intrusion detection, and obfuscated code.",
+            "We’d like you to look into a website called 'The Cauldron'. It appears to be an online store selling rare magical items like potions and relics, but authorities suspect the site launders money and scams users. We'd like you to investigate this site, gather evidence, and expose its illegal activities.",
+            "We know that the login system might be susceptible to SQL injection, and there’s an outdated encryption library. Expect firewalls, intrusion detection, and obfuscated code.",
             "Failure is not an option and time is critical. Act swiftly to prevent further damage and gather intel to dismantle their network. Good luck!"
 ]
 
@@ -77,8 +76,9 @@ function nextDialogue() {
 function displayInstruction() {
     if (index < INSTRUCTIONS.length) {
         document.getElementById("instruction").innerHTML = highlightCTF(INSTRUCTIONS[index]);
-        document.getElementById("stage-title").innerText = TITLES[index];
-        if (index === 1) { // Show download link only for instruction 2 (index 1)
+        document.getElementById("stage-title").innerHTML = TITLES[index];
+        document.getElementById("hint").innerHTML = HINTS[index];
+        if (TITLES[index] === "2. Downloadable challenges") { // Show download link
             document.getElementById("downloadLink").style.display = "block";
         } else {
             document.getElementById("downloadLink").style.display = "none";
@@ -90,7 +90,6 @@ function displayInstruction() {
 }
 
 function showHint() {
-    document.getElementById("hint").innerText = HINTS[index];
     document.getElementById("hint").style.display = "block";
 }
 
@@ -120,4 +119,43 @@ function showDialog() {
 
 function closeDialog() {
     document.getElementById("dialogBox").style.display = "none";
+}
+
+function openWebsite(){
+    document.getElementById("redirect").style.display = "none";
+    document.getElementById("phoneCall").style.display = "none"
+    window.open("login.html", '_blank');
+    document.getElementById("contentContainer").style.display = "block";
+    INSTRUCTIONS.push(
+        "It seems that we cannot view any of the website's content without authentication. However, we know that there is an SQL injection vulnerability that will enable us to bypass authentication?",
+        "You've bypassed login. Now, gain admin access by stealing the admin's session cookie using <a href='https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-stealing-cookies' target='_blank'>Cross-Site Scripting (XSS)</a>."
+    );
+    TITLES.push("8. Bypassing Authentication","9. Steal the Admin Cookie");
+    HINTS = ["The statement used for authenication is &quotSELECT * from users where user='username' AND password = 'password'&quot",
+        "Post your cookie stealing script as a product review. When you view the page, the browser will execute your comment as a script"
+    ];
+    FLAGS.push("ctf{}","ctf{}");
+    displayInstruction();
+    submitBtn.onclick = submitFlag;
+    phoneCall.onclick = showDialog;
+}
+
+function attemptLogin() {
+    // Get input values
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    var normalisedPassword = password.replace(/\s+/g, '');
+
+    // Simulate SQL injection check ignoring spaces
+    if (username === "eve_1981" && normalisedPassword === "'OR1=1--") {
+        // Authentication successful
+        document.getElementById("loginMessage").innerHTML = "Login successful. Redirecting...";
+        setTimeout(function() {
+            window.location.href = "home.html"; // Redirect to dashboard page
+        }, 1000); // 1 second delay for demonstration purposes
+    } else {
+        // Authentication failed
+        document.getElementById("loginMessage").innerHTML = "Invalid credentials. Please try again.";
+    }
 }
