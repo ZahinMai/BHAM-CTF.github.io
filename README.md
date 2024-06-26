@@ -1,166 +1,51 @@
-# "Security challenge" CTF
+# The Cauldron - Cybersecurity Resource
 
-**Target age range: 14-18 (Years 10 - 13)**
+This repository hosts a series of cybersecurity challenges designed to teach and test skills in various domains of cybersecurity. It presents beginner-friendly challenges with a variety of difficulties that require minimal cybersecurity knowledge. 
 
-**Recommended team size: 3-4**
+- **Recommended age: 14-18**
+- **Recommended team size: 3-4**
 
-# Beginner (tutorial challenges)
+## Project Structure
 
-## Challenge 1 - Getting started
-### Challenge instructions
-- A capture-the-flag (CTF) is a competition where you solve a number of challenges to test your cybersecurity skills by solving problems to find flags.
-- All flags in our CTF will be in the following format: **ctf{capture-the-flag}**.
-- You can solve the first challenge right now by submitting this flag. (Note: flags are NOT case-sensitive!)
-  
-### Intended solve
+- **README.md**: Provides an overview of the CTF, setup instructions, and details about the project structure.
+- **index.html**: Entry point for participants to begin the CTF. Contains the interface for entering flags and accessing challenges.
+- **login.html**: Opens in a new tab after participants complete the warm-up challenges in index.html. Participants will use this page to proceed with the next set of challenges related to compromising the target website. 
+  **Note: Participants must keep index.html open to view instructions and enter flags. Do NOT refresh this page as progress will be lost.**
+- **home.html**: Landing page after successful login. Participants can navigate to different challenges related to specific products.
+- **product.html**: Page where specific challenges related to product interactions are hosted.
+- **xss.md**: Documentation file explaining XSS vulnerabilities and techniques participants need to understand. Opens via a link in its respective challenge.
+- **static**: Directory containing CSS styles, images, and scripts used throughout the CTF.
+  - **/css**: Directory for CSS stylesheets.
+    - `cauldron.css`: Styles specific to the CTF challenges.
+    - `intro-challs.css`: Styles for introductory challenges.
+  - **/images**: Directory for image assets used in the CTF challenges.
+  - **/scripts**: Directory for JavaScript files.
+    - `cauldron-script.js`: JavaScript logic specific to the CTF challenges.
+    - `intro-script.js`: JavaScript for introductory challenges. S
 
-#### Flag: 
-```
-ctf{capture-the-flag}
-```
+### Delivery Guidelines
 
-**Hint: `Copy and paste the highlighted flag.`**
+1. **Download this repository**: Click on the green "Code" button above and select "Download ZIP". Alternatively, clone the repository using Git:
+   ```
+   git clone https://github.com/your-username/your-ctf.git
+   ```
+2. **Introduction to Cybersecurity**: Start by providing a quick introduction to cybersecurity and the skills participants will develop during this session. Explain what a CTF (Capture The Flag) is and its relevance to cybersecurity learning.
 
----
+3. **Use index.html for Instructions**: Ensure students keep index.html open throughout the session. They should not access the project directory or its files directly from the system, as this could reveal answers.
 
-## Challenge 2 - Downloadable challenges
-### Challenge instructions
-- Some challenges require you to download files in order to be able to solve them.
-- Click on the ‘DOWNLOAD CHALLENGE’ button to download the [challenge files](/src/flag-2.txt) and find the flag to submit!
-  
-### Intended solve
-[The linked file](/src/flag-2.txt) contains the flag: "**ctf{the-second-flag}**"
+4. **Ethical Hacking Guidelines**: Emphasize the importance of ethical hacking and respect for rules. Ensure participants understand:
+   - Not to attack the infrastructure hosting the CTF.
+   - How to report issues or bugs responsibly.
 
-#### Flag:
-```
-ctf{the-second-flag}
-```
+5. **Demonstration of Challenges**: Walk participants through the first two challenges to demonstrate how they work. Further support should not be necessary as hints are provided within the challenges themselves.
 
-**Hint: `The flag is in the downloaded text file.`**
+6. **Encourage Collaboration and Progress Monitoring**: Foster collaboration among participants. Monitor their progress and ensure teams record all flags obtained to safeguard against loss upon website refresh or reload.
 
---- 
+### Feedback and Contribution
 
-## Challenge 3 - Trivia time
-### Challenge instructions
-- Here's another flag up for grabs. Who is referred to as the known as the 'World's First Programmer'?
-- Enter the flag in the format ctf{firstname-surname}!
+- **Gather Feedback**: Collect feedback from participants about their experience with the CTF. Use this feedback to improve future sessions.
+- **Contribute**: This resource is continually evolving. Please contribute new challenges, improve existing ones, or provide feedback to enhance the learning experience.
 
-### Intended solve
-**Ada Lovelace** is commonly referred to as the 'World's First Programmer'.
+## Contact
 
-#### Flag:
-```
-ctf{ada-lovelace}
-```  
-
-**Hint: `She was Countess of Lovelace, but what is her full name?`**
-
---- 
-
-## Challenge 4 - A cooperative clue
-### Challenge instructions
-- Each team has been provided with their opponent's flag.
-- You must communicate the first clue to the opposing team in morse code using a blinking LED.
-
-  
-### Skills
-- Morse code
-- LED programming
-- Cryptography
-  
-### Intended solve
-Morse code for "blink":
--... .-.. .. -. -.-  
-_with short flashes representing dots, and longer flashes representing dashes._
-
-#### Flag:
-```
-ctf{blink}
-```
-
-**Hint: `Keeping your opponent’s flag from them is not an option as it will be an instant fail.`**
-
----
-
-## Challenge 5 - What am I?
-### Challenge instructions
-- Sometimes you'll be asked to solve riddles.
-- Solve the following riddle to obtain the next flag:
-  
-  'In ones and zeroes,  I am found,  
-  A language without a sound.  
-  With just two digits, I convey.   
-  All about computing, every day.'
-
-### Skills
-- Problem solving
-- Knowledge of binary
-
-### Intended solve
-The answer to the riddle is **binary**.
-
-#### Flag:
-```
-ctf{binary}
-```
-
-**Hint: `Please, you don't need a clue for this.`**
-
----
-
-## Challenge 6 - Out of sight
-### Challenge instructions
-- Beneath the surface, the source resides. Hidden in code, secrets abide.
-
-### Skills
-- Problem solving
-- Knowledge of HTML comments
-
-### Intended solve
-Hidden as a comment in the source code is **`<!-- The flag for challenge 6 is ctf{caesar} -->`**.
-
-#### Flag:
-```
-ctf{caesar}
-```
-
-**Hint: `Inspect the page source. The flag is hidden there.`**
-
----
-
-## Challenge 7 - Shifty statements
-### Challenge instructions
-- LOokSlIKethefLaGGotlOstiNthistextjam{P-jhtl-P-zhd-P-jvuxblylk}buTuNeedtoshiftiTtoenter...
-
-### Skills
-- Problem solving
-- Cryptography
-
-### Intended solve
-Within the text is a Caesar cipher of "**ctf{I-came-I-saw-I-conquered}**", which has been shifted by 7 characters. To decrypt, a rotational shift of 19 is used. The flag is within the decrypted text.
-
-#### Flag:
-```
-ctf{I-came-I-saw-I-conquered}
-```
-
-**Hint: `Caesar once said...`**
-
----
-
-# Intermediate
-
-- Hello, this is Agent Grey from the Cybersecurity Task Force. Well done on solving the initial challenges. We need your help on a high-priority mission.
-- _Thank you. What's the mission?_
-- We’ve identified a rogue website crucial to an underground network. Your task is to infiltrate it, bypass its security, and extract encrypted communication logs, user databases, and transaction records.
-- _Understood. What vulnerabilities do we know of so far?_
-- The login system might be susceptible to SQL injection, and there’s an outdated encryption library. Expect firewalls, intrusion detection, and obfuscated code.
-- _Got it. We'll do our best._
-- Failure is not an option and time is critical. Act swiftly to prevent further damage and gather intel to dismantle their network. Good luck!
-- _Thank you. We won't let you down!_
-
-## Challenge 8
-
----
-
-# Advanced
+For any questions, feedback, or support, please contact me via email: zahin08@outlook.com

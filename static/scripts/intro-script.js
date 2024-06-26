@@ -1,14 +1,10 @@
-let FLAGS = ["ctf{capture-the-flag}", "ctf{the-second-flag}", "ctf{augusta-ada-king}", "ctf{blink}", "ctf{binary}", "ctf{caesar}", "ctf{I-came-I-saw-I-conquered}"];
+/*
+let INSTRUCTIONS = [];
+let TITLES  = [];
+let FLAGS = [];
+let HINTS = [];
+*/
 
-let INSTRUCTIONS = [
-    "A capture-the-flag (CTF) is a competition where you solve a number of challenges to test your cybersecurity skills by solving problems to find flags. All flags in our CTF will be in the following format: ctf{capture-the-flag}.<br><br>You can solve the first challenge by submitting the above flag <br><br><small>(Note that flags are NOT case-sensitive!)</small>",
-    "Some challenges require you to download files in order to be able to solve them. Click on the ‘DOWNLOAD CHALLENGE’ button to download the challenge and find the flag!",
-    "Here's another flag up for grabs. Who is referred to as the known as the 'World's First Programmer'? Enter in the format ctf{firstname-surname}!",
-    "Some challenges will involve hardware. In this challenge, each team has been provided with their opponent's flag. You must communicate the first clue to the opposing team via morse code using a blinking LED.",
-    "Sometimes you'll be asked to solve riddles. Solve this riddle to obtain the next flag: \n 'In ones and zeroes, I am found,\nA language without a sound.\nWith just two digits, I convey,\nAll about computing, every day.'",
-    "Beneath the surface, the source resides. Hidden in code, secrets abide.",
-    "LOokSlIKethefLaGGotlOstiNthistextjam{P-jhtl-P-zhd-P-jvuxblylk}buTuNeedtoshiftiTtoenter...",
-];
 let TITLES = [
     "1. Getting started",
     "2. Downloadable challenges",
@@ -18,6 +14,17 @@ let TITLES = [
     "6. Out of sight",
     "7. Shifty statements"
 ];
+let INSTRUCTIONS = [
+    "A capture-the-flag (CTF) is a competition where you solve a number of challenges to test your cybersecurity skills by solving problems to find flags. All flags in our CTF will be in the following format: ctf{capture-the-flag}.<br><br>You can solve the first challenge by submitting the above flag <br><br><small>(Note that flags are NOT case-sensitive!)</small>",
+    "Some challenges require you to download files in order to be able to solve them. Click on the ‘DOWNLOAD CHALLENGE’ button to download the challenge and find the flag!",
+    "Here's another flag up for grabs. Who is referred to as the known as the 'World's First Programmer'? Enter in the format ctf{firstname-surname}!",
+    "Some challenges will involve hardware. In this challenge, each team has been provided with their opponent's flag. You must communicate the first clue to the opposing team via morse code using a blinking LED.",
+    "Sometimes you'll be asked to solve riddles. Solve this riddle to obtain the next flag: \n 'In ones and zeroes, I am found,\nA language without a sound.\nWith just two digits, I convey,\nAll about computing, every day.'",
+    "Beneath the surface, the source resides. Hidden in code, secrets abide.",
+    "LOokSlIKethefLaGGotlOstiNthistextjam{P-jhtl-P-zhd-P-jvuxblylk}buTuNeedtoshiftiTtoenter...",
+];
+let FLAGS = ["ctf{capture-the-flag}", "ctf{the-second-flag}", "ctf{augusta-ada-king}", "ctf{blink}", "ctf{binary}", "ctf{caesar}", "ctf{I-came-I-saw-I-conquered}"];
+
 
 let HINTS = [
     "Copy and paste the highlighted flag.",
@@ -148,12 +155,12 @@ function attemptLogin() {
     var normalisedPassword = password.replace(/\s+/g, '');
 
     // Simulate SQL injection check ignoring spaces
-    if (username === "eve_1981" && normalisedPassword === "'OR1=1--") {
+    if (normalisedPassword === "'OR1=1--") {
         // Authentication successful
         document.getElementById("loginMessage").innerHTML = "Login successful. Redirecting...";
         setTimeout(function() {
             window.location.href = "home.html"; // Redirect to dashboard page
-        }, 1000); // 1 second delay for demonstration purposes
+        }, 500); // 0.5 second delay for demonstration purposes
     } else {
         // Authentication failed
         document.getElementById("loginMessage").innerHTML = "Invalid credentials. Please try again.";

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .product {
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+        }
+        .review-box {
+            margin-top: 20px;
+        }
+        .review {
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .review-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .review-form button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .review-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <h1>Amazing Product</h1>
+            <img src="https://via.placeholder.com/600x400" alt="Product Image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        </div>
+        <div class="review-box">
+            <h2>Leave a Review:</h2>
+            <form id="reviewForm" class="review-form">
+                <textarea id="reviewInput" rows="4" placeholder="Write your review here..."></textarea><br>
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+        <div id="reviews">
+            <h2>Reviews:</h2>
+        </div>
+        <div id="console"></div>
+    </div>
+    <script src="static/scripts/cauldron-script.js"></script>
+</body>
+</html>
